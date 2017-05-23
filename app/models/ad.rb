@@ -13,8 +13,8 @@ class Ad < ActiveRecord::Base
   validates :price, numericality: { greater_than: 0 }
 
   # Scopes
-  scope :descending_order, ->(quantity = 10, page) {
-    limit(quantity).order(created_at: :desc).page(page).per(9)
+  scope :descending_order, ->(page) {
+    order(created_at: :desc).page(page).per(9)
   }
   scope :to_the, ->(member) { where(member: member) }
   scope :by_category, ->(id) { where(category: id) }
