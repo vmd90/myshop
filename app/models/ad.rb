@@ -1,5 +1,7 @@
 class Ad < ActiveRecord::Base
 
+  ratyrate_rateable 'quality'
+
   # Callbacks
   before_save :md_to_html
 
