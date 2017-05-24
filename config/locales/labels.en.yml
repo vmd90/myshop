@@ -1,0 +1,13 @@
+en:
+  labels:
+    login: Login
+    identify_yourself: Who are you?
+    remember_me: Remember me
+    enter: Log in
+    email: E-mail
+    password: Password
+    message: Message
+    new_message: New message
+    send_message_to: Send message to %{name}
+    recipient: To
+    subject: Subject

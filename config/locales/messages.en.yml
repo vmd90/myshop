@@ -1,0 +1,17 @@
+en:
+  messages:
+    confirm: Are you sure?
+    confirm_with: Do you really want to delete (<b>%{item}</b>)?
+    listing: Listing %{model}
+    editing: Editing %{model}
+    new: New %{model}
+    errors: there are...
+    created: Created successfully!
+    created_with: "%{item} created successfully!"
+    updated: Updated successfully!
+    updated_with: "%{item} updated successfully!"
+    destroyed: Deleted successfully!
+    destroyed_with: "%{item} deleted successfully!"
+    not_authorized: You are not authorized to perform action.
+    email_delivered: E-mail sent successfully!
+    email_not_delivered: Error trying to send e-mail. Try again!
