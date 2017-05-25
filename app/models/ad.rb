@@ -20,7 +20,7 @@ class Ad < ActiveRecord::Base
     order(created_at: :desc).page(page).per(9)
   }
   scope :to_the, ->(member) { where(member: member) }
-  scope :by_category, ->(id) { where(category: id) }
+  scope :by_category, ->(id, page) { where(category: id).page(page).per(9) }
   scope :search, ->(q, page) {
     where("lower(title) LIKE ?", "%#{q.downcase}%").page(page).per(9)
   }

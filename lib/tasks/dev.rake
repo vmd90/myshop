@@ -45,6 +45,7 @@ namespace :dev do
 
     100.times do
       Member.create!(
+        name: Faker::Name.name,
         email: Faker::Internet.email,
         password: "123456",
         password_confirmation: "123456"
@@ -67,7 +68,7 @@ namespace :dev do
         description_short: Faker::Lorem.sentence([2,3].sample),
         member: Member.first,
         category: Category.all.sample,
-        price: "#{Random.rand(500)},#{Random.rand(99)}",
+        price: "#{Random.rand(500)}.#{Random.rand(99)}",
         finish_date: Date.today + Random.rand(90),
         picture: File.new(Rails.root.join('public', 'templates', 'images-for-ads', "#{Random.rand(9)}.jpg"), 'r')
       )
@@ -80,7 +81,7 @@ namespace :dev do
         description_short: Faker::Lorem.sentence([2,3].sample),
         member: Member.all.sample,
         category: Category.all.sample,
-        price: "#{Random.rand(500)},#{Random.rand(99)}",
+        price: "#{Random.rand(500)}.#{Random.rand(99)}",
         finish_date: Date.today + Random.rand(90),
         picture: File.new(Rails.root.join('public', 'templates', 'images-for-ads', "#{Random.rand(9)}.jpg"), 'r')
       )

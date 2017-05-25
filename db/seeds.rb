@@ -45,6 +45,7 @@ puts "ADMIN added successfully!"
 puts "Adding MEMBER..."
 
 Member.create!(
+  name: "Victor Municelli Dário",
   email: "member@member.com",
   password: "123456",
   password_confirmation: "123456"
