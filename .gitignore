@@ -15,4 +15,5 @@
 /public/system
 /log/*
 !/log/.keep
-/tmp
+/tmp/
+/.idea/

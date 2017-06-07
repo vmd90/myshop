@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n'
 # Manage Procfile-based applications
@@ -23,7 +23,7 @@ gem 'paperclip', '~> 5.0.0'
 # jQuery UI for the Rails asset pipeline
 gem 'jquery-ui-rails'
 # The safe Markdown parser, reloaded.
-gem 'redcarpet'
+gem 'kramdown'
 # FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord
 gem 'friendly_id'
 
@@ -49,6 +49,7 @@ end
 
 # Use sqlite3 as the database for Active Record'
 gem 'sqlite3'
+#gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3', '>= 1.3.23'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -64,6 +65,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+#gem "puma"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -91,9 +94,7 @@ group :development do
   # Markdown Lorem Ipsum generator
   gem 'doctor_ipsum'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
-  gem 'lerolero_generator'
+  gem 'web-console'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
